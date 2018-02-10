@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/home_item"
-          android:title="Inicio"
-          android:icon="@mipmap/home"/>
+          android:title="Lista"
+          android:icon="@mipmap/list"/>
     <item android:id="@+id/library_item"
-        android:title="Biblioteca"
-        android:icon="@mipmap/library"/>
+        android:title="Registro"
+        android:icon="@mipmap/registernav"/>
     <item android:id="@+id/category_item"
-        android:title="Categoria"
-        android:icon="@mipmap/category"/>
+        android:title="Historial"
+        android:icon="@mipmap/historial"/>
     <item android:id="@+id/record_item"
-        android:title="Grabación"
-        android:icon="@mipmap/record"/>
+        android:title="Favoritos"
+        android:icon="@mipmap/favorito"/>
 </menu>
