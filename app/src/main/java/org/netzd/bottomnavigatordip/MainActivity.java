@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import org.netzd.bottomnavigatordip.ListaHistorial.ListaFragment;
+
 public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView mainBottomNavigationView = null;
@@ -44,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
         //Agregar fragmentos que manejara
         musicAdapter.addFragment(HomeFragment.newInstance("", ""));
         musicAdapter.addFragment(LibraryFragment.newInstance("", ""));
-        musicAdapter.addFragment(CategoryFragment.newInstance("", ""));
+        musicAdapter.addFragment(ListaFragment.newInstance("", ""));
+        //musicAdapter.addFragment(CategoryFragment.newInstance("", ""));
         musicAdapter.addFragment(RecordFragment.newInstance("", ""));
 
         mainViewPager.setAdapter(musicAdapter);
