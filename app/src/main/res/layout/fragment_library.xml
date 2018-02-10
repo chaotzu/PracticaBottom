@@ -4,10 +4,101 @@
     android:layout_height="match_parent"
     tools:context="org.netzd.bottomnavigatordip.LibraryFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
 
+            <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            />
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apellidos"
+                />
+
+            <EditText
+                android:id="@+id/etApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvCelular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Celular"
+                />
+
+            <EditText
+                android:id="@+id/etCelular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvGrupos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grupos:"
+                />
+
+            <CheckBox android:id="@+id/checkbox_amigos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amigos"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_familia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Familia"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_otro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otros"
+                android:onClick="onCheckboxClicked"/>
+            <TextView
+                android:id="@+id/tvGenero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Genero:"
+                />
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/radio_pirates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hombre"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/radio_ninjas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mujer"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar"/>
+
+        </LinearLayout>
+    </RelativeLayout>
 </FrameLayout>
